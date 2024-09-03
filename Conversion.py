@@ -1,4 +1,5 @@
-choose_tool = int(input("Choose a conversion tool (1 for KM to miles, 2 for °C to °F, 3 for binary to decimal): "))
+print("Week 2 Lab project\nOption 1 - KM to Miles\nOption 2 - Celsius to Fahrenheit\nOption 3 - Binary to Decimal")
+choose_tool = int(input("Choose a conversion tool: "))
 
 def convert_distance(number):
     return input / 1.609344 # 1 mile = 1.609344 km so we divide to get result
