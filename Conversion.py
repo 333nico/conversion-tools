@@ -2,10 +2,10 @@ print("Week 2 Lab project\nOption 1 - KM to Miles\nOption 2 - Celsius to Fahrenh
 chooseTool = int(input("Choose a conversion tool: "))
 
 def convert_distance(number):
-    return input / 1.609344 # 1 mile = 1.609344 km so we divide to get result
+    return number / 1.609344 # 1 mile = 1.609344 km so we divide to get result
 
 def convert_temp(number):
-    return (input * 1.8) + 32 # fahrenheit = celsius x 1.8 + 32
+    return (number * 1.8) + 32 # fahrenheit = celsius x 1.8 + 32
 
 def convert_binary(number):
     return int(str(number), 2) # returns base 2 number as a decimal number
