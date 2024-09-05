@@ -8,7 +8,16 @@ def convert_temp(number):
     return (number * 1.8) + 32 # fahrenheit = celsius x 1.8 + 32
 
 def convert_binary(number):
-    return int(str(number), 2) # returns base 2 number as a decimal number
+    binaryStr = str(number)
+    decimal = 0 # store decimal number
+    power = len(binaryStr) - 1 # keeps track of the pos of each digit
+    
+    for digit in binaryStr: # loop through each digit that = 1 and adds power of 2
+        if digit == '1':
+            decimal += 2 ** power
+        power -= 1
+    
+    return decimal
 
 if chooseTool == 1:
     input = float(input("Input Distance in Kilometers: "))
